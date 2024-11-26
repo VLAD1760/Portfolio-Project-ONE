@@ -9,19 +9,20 @@
 body {
     background-color: var(--color-de-fondo);
     font-family: 'Raleway', sans-serif;
-    margin: 0;
+    margin: 50px;
     box-sizing: border-box;
     padding: 0;
     line-height: 1.6;
 }
 
 ol, ul, li {
-    list-style: none;
+    list-style:none;
 }
 
 a {
     text-decoration: none;
     color: var(--color-de-link);
+
 }
 
 h1, h2, p {
@@ -38,38 +39,54 @@ h1, h2, p {
 }
 
 .cabecera__logo {
+    height: 70px;
     max-width: 80px; /* Ajuste para pantallas pequeñas */
     border-radius: 50%;
 }
 
 .cabecera__titulo {
     font-size: 1.2rem;
-    text-align: center;
+    margin-right: 350px;
 }
 
 .navegacion__lista {
     display: none;
+    margin-right: 50px;
+    margin-bottom: 0px;
 }
 
 .navegacion__elemento a {
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Reduce font size slightly */
+    padding: 5px 5px; /* Adjust padding if needed */
+    white-space: nowrap; /* Ensure no wrapping */
 }
 /* ------------------------------ Sección Presentación ------------------------------*/
 .presentacion{
     align-items: center;
-    display: flex;
+    display: inline-flex;
     flex-direction: row-reverse;
 }
 
 .presentacion__foto{
-    width: 500px;
+    width: 275px;
     height: auto;
     border-radius: 50%;
+    margin-right: 30px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 30rem;
 }
 
 
 /* ------------------------------ Sección sobre mí ----------------------------------*/
-
+.sobre-mi{
+    align-items: center;
+    margin-right: 10px;
+}
 
 /*------------------------------ Sección de Habilidades ------------------------------*/
 
