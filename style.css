@@ -1,8 +1,8 @@
 /* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
 */
 :root {
-    --color-de-fondo: #959595;
-    --color-de-fondo-menu: #696969;
+    --color-de-fondo: #fdfafa;
+    --color-de-fondo-menu: #fdfafa;
     --color-de-link: #ff0000;    
 }
 
@@ -39,14 +39,14 @@ h1, h2, p {
 }
 
 .cabecera__logo {
-    height: 70px;
-    max-width: 80px; /* Ajuste para pantallas pequeñas */
+    height: 90px;
+    max-width: 100px; /* Ajuste para pantallas pequeñas */
     border-radius: 50%;
 }
 
 .cabecera__titulo {
     font-size: 1.2rem;
-    margin-right: 350px;
+    margin-right: 550px;
 }
 
 .navegacion__lista {
@@ -72,6 +72,7 @@ h1, h2, p {
     height: auto;
     border-radius: 50%;
     margin-right: 30px;
+    margin-left: 50px;
 }
 
 .redes{
@@ -89,15 +90,43 @@ h1, h2, p {
 }
 
 /*------------------------------ Sección de Habilidades ------------------------------*/
-
+.habilidades__lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 /*------------------------------ Sección de Aficiones --------------------------------*/
-
+.aficiones__lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 /*------------------------------ Sección de Proyectos --------------------------------*/
 
 
 /*------------------------------ Sección de Contacto ---------------------------------*/
+.contacto {
+    display: flex;
+    justify-content:center; /* Align content to the right */
+    align-items: center;      /* Vertically align items */
+    padding: 2rem;
+    gap: 2rem;                /* Space between the image and the form */
+}
+
+.contacto__formulario {
+    display: flex;
+    flex-direction: column; /* Keeps form inputs stacked */
+    width: 300px;           /* Adjust width as needed */
+    gap: 1rem;              /* Adds space between form elements */
+}
+
+.contacto__foto {
+    width: auto; /* Adjust the image size */
+    height: 455px;
+    border-radius: 10%;
+}
 
 
 /* ------------------------------ Responsividad ---------------------------------------*/
