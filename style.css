@@ -1,18 +1,25 @@
 /* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
 */
 :root {
-    --color-de-fondo: #fdfafa;
-    --color-de-fondo-menu: #fdfafa;
+    --color-de-fondo: #131313;
+    --color-de-fondo-menu: #131313;
     --color-de-link: #ff0000;    
 }
 
 body {
     background-color: var(--color-de-fondo);
     font-family: 'Raleway', sans-serif;
-    margin: 50px;
+    margin: 25px 50px 0px 50px;
     box-sizing: border-box;
     padding: 0;
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
 }
 
 ol, ul, li {
@@ -25,10 +32,17 @@ a {
 
 }
 
-h1, h2, p {
-    color: #000000;
+h1, p {
+    color: #a3a3a3;
+    display: flex;
+    justify-content: center;
 }
 
+h2{
+    color: #ff0000;
+    display: flex;
+    justify-content: center;
+}
 /* ------------------------------ Sección Menú -------------------------------*/
 .cabecera {
     display: flex;
@@ -39,20 +53,20 @@ h1, h2, p {
 }
 
 .cabecera__logo {
-    height: 90px;
+    height: auto;
     max-width: 100px; /* Ajuste para pantallas pequeñas */
     border-radius: 50%;
 }
 
 .cabecera__titulo {
     font-size: 1.2rem;
-    margin-right: 550px;
 }
 
 .navegacion__lista {
     display: none;
     margin-right: 50px;
     margin-bottom: 0px;
+
 }
 
 .navegacion__elemento a {
@@ -60,113 +74,137 @@ h1, h2, p {
     padding: 5px 5px; /* Adjust padding if needed */
     white-space: nowrap; /* Ensure no wrapping */
 }
-/* ------------------------------ Sección Presentación ------------------------------*/
-.presentacion{
-    align-items: center;
-    display: inline-flex;
-    flex-direction: row-reverse;
+
+/* Footer */
+.footer {
+    background-color: #131313;
+    color: #ff0000;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    width: 100%;
 }
 
-.presentacion__foto{
-    width: 275px;
+/* Presentación */
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.presentacion__foto {
+    width: 100%;
+    max-width: 300px;
     height: auto;
     border-radius: 50%;
-    margin-right: 30px;
-    margin-left: 50px;
 }
 
-.redes{
+.presentacion__contenedor {
+    padding: 1rem;
+}
+
+/* Red social icons */
+.redes {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-right: 30rem;
+    justify-content: center;
+    gap: 1rem;
 }
 
-
-/* ------------------------------ Sección sobre mí ----------------------------------*/
-.sobre-mi{
-    align-items: center;
-    margin-right: 10px;
+/* Navigation Menu */
+.navegacion__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
 }
 
-/*------------------------------ Sección de Habilidades ------------------------------*/
-.habilidades__lista{
+/* Skills and Hobbies */
+.habilidades__lista, .aficiones__lista {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 1rem;
 }
 
-/*------------------------------ Sección de Aficiones --------------------------------*/
-.aficiones__lista{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-/*------------------------------ Sección de Proyectos --------------------------------*/
-
-
-/*------------------------------ Sección de Contacto ---------------------------------*/
+/* Contact Section */
 .contacto {
     display: flex;
-    justify-content:center; /* Align content to the right */
-    align-items: center;      /* Vertically align items */
+    flex-direction: column;
+    align-items: center;
     padding: 2rem;
-    gap: 2rem;                /* Space between the image and the form */
-}
-
-.contacto__formulario {
-    display: flex;
-    flex-direction: column; /* Keeps form inputs stacked */
-    width: 300px;           /* Adjust width as needed */
-    gap: 1rem;              /* Adds space between form elements */
+    gap: 2rem;
 }
 
 .contacto__foto {
-    width: auto; /* Adjust the image size */
-    height: 455px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     border-radius: 10%;
 }
 
+.contacto__formulario {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
-/* ------------------------------ Responsividad ---------------------------------------*/
-
-/* Tablets y pantallas más grandes */
+/* Responsiveness */
 @media (min-width: 768px) {
-    .cabecera {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
+    /* Header adjustments */
     .cabecera__logo {
-        max-width: 100px;
+        width: 60px;
+    }
+    
+    .cabecera__titulo {
+        font-size: 1rem;
     }
 
-    .cabecera__titulo {
-        font-size: 1.5rem;
+    .presentacion {
+        text-align: left;
+    }
+
+    /* Presentación adjustments */
+    .presentacion__contenedor {
+        padding: 0;
     }
 
     .navegacion__lista {
-        display: flex;
         flex-direction: row;
-        gap: 1rem;
-        margin-top: 0;
+        justify-content: center;
+        gap: 0.3rem;
     }
 
-    .navegacion__elemento a {
-        font-size: 1rem;
+    .habilidades__lista, .aficiones__lista {
+        display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+
+    .contacto {
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+
     }
 }
 
-/* Pantallas grandes */
 @media (min-width: 1024px) {
-    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
-    .cabecera__titulo {
-        font-size: 1.8rem;
+    .presentacion {
+        gap: 2rem;
     }
 
-    .navegacion__elemento a {
-        font-size: 1.1rem;
+    .habilidades__lista, .aficiones__lista {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contacto {
+        gap: 3rem;
     }
 }
