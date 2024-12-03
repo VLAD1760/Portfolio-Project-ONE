@@ -75,6 +75,68 @@ h2{
     white-space: nowrap; /* Ensure no wrapping */
 }
 
+/* Experiencia */
+.experiencia__netflix{
+   height: auto;
+   width: 70%; 
+   max-width: 900px;
+}
+
+.experiencia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.experiencia__guess{
+    height: auto;
+    width: 70%; 
+    max-width: 1000px;
+ }
+ 
+ .experiencia2{
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: space-evenly;
+ }
+
+.button-text {
+   text-align: center; 
+   margin-bottom: 10px ; /* Add spacing between text and buttons */
+  }
+
+  .button{
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 12px;
+    color: #ff0000;
+    background-color: #000000;
+  }
+
+  .button2{
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 12px;
+    color: #ff0000;
+    background-color: #000000;
+    margin-left: 8px;
+  }
+
+  .button:hover {
+    background-color: #00000000;
+    color: #ff0000;
+  }
+
+  .button2:hover {
+    background-color: #00000000;
+    color: #ff0000;
+  }
+
+  .button__box{
+    display: flex;
+    justify-content:center;
+  }
+
 /* Footer */
 .footer {
     background-color: #131313;
@@ -163,7 +225,7 @@ h2{
     }
     
     .cabecera__titulo {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .presentacion {

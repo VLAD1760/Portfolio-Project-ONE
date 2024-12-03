@@ -15,13 +15,16 @@
         <!-- Menú -->
         <header class="cabecera">
             <img class="cabecera__logo" src="/assets/vlad760.jpg" alt="Logo">
-            <h1 class="cabecera__titulo">Jhovani Baltazar</h1>
+            <h1 class="cabecera__titulo">Welcome To My World</h1>
             <nav class="navegacion">
                 <ul class="navegacion__lista">
                     <li class="navegacion__elemento"><a href="#sobre-mi">Sobre mí</a></li>
                     <li class="navegacion__elemento"><a href="#habilidades">Habilidades</a></li>
                     <li class="navegacion__elemento"><a href="#aficiones">Aficiones</a></li>
+                    <li class="navegacion__elemento"><a href="#experiencia">Experiencia en Programación
                     <li class="navegacion__elemento"><a href="#contacto">Contacto</a></li>
+                    </a></li>
+
                 </ul>
             </nav>
         </header>
@@ -33,10 +36,9 @@
             <h2 class="presentacion__titulo">Hola, mi nombre es Jhovani Baltazar y construyo páginas web</h2>
             <p class="presentacion__subtitulo"> Estoy enfocado en ser un Frontend Developer y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</p>
             <ul class="redes">
-                <li class="redes__img"><a href="">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
-                <li class="redes__img"><a href="">Linkedin <img src="assets/arrow.png" alt="Flecha"></a></li>
-                <li class="redes__img"><a href="">Instagram <img src="assets/arrow.png" alt="Flecha"></a></li>
-                <li class="redes__img"><a href="">Currículo <img src="assets/arrow.png" alt="Flecha"></a></li>
+                <li class="redes__img"><a href="https://github.com/VLAD1760">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
+                <li class="redes__img"><a href="https://www.linkedin.com/in/jhovanisbp/">Linkedin <img src="assets/arrow.png" alt="Flecha"></a></li>
+                
             </ul>
         </div>
     </section>
@@ -111,21 +113,58 @@
         </ul>
     </section>  
 
+        <!-- Sección de Experiencia en Programación -->
+        <h2 class="experiencia__titulo">Experiencia en Programación</h2>
+        <section class="experiencia" id="experiencia">
+      <img class="experiencia__netflix" src="/assets/Netflix_clone.png" alt="Netflix clone">
+      <div class="button-container">
+          <p class="button-text">Netflix Clone</p>
+          <p class="button-text">Made with Html5, CSS3, JavaScript</p> 
+        <div class="button__box">
+            <a href="https://github.com/VLAD1760/Vlad760netfclone" target="_blank">
+                <button class="button">Repositorio</button>
+            </a>
+            <a href="https://vlad760nfclone.netlify.app/" target="_blank">
+                <button class="button2">Demo</button>
+            </a>
+        </div>
+      </div>
+         </section>
+
+      <section class="experiencia2" id="experiencia2">
+        <img class="experiencia__guess" src="/assets/Guess_Number_game.png" alt="Guess Number game">
+        <div class="button-container">
+            <p class="button-text">Adivina el Numero</p>
+            <p class="button-text">Made with Html5, CSS3, JavaScript</p> 
+            <div class="button__box">
+                <a href="https://github.com/VLAD1760/Numero-Secreto" target="_blank">
+                    <button class="button">Repositorio</button>  
+                </a>
+                <a href="https://vlad1760.github.io/Numero-Secreto/" target="_blank"> 
+                    <button class="button2">Demo</button>
+                </a>
+          </div>
+        </div>
+
+      
+    </section>
+
     <!-- Sección de Contacto -->
     <section class="contacto" id="contacto">
-        <img class="contacto__foto" src="/assets/Contact_me.jpg" alt="Contact_me">      
-        <form class="contacto__formulario">
+        <img class="contacto__foto" src="/assets/Contact_me.jpg" alt="Contact_me">
+        <form id="contactForm" class="contacto__formulario">
             <h2>Contacto</h2>
-            <p>Quieres contactarme?</p>
-            <p>Complete el siguente formulario y me pondre en contacto con usted lo mas antes posible.</p>
+            <p>¿Quieres contactarme?</p>
+            <p>Complete el siguiente formulario y me pondré en contacto con usted lo más antes posible.</p>
             
-            <input class="contacto__campo" type="text" placeholder="Nombre">
-            <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
-            <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
+            <input id="name" class="contacto__campo" type="text" placeholder="Nombre" required>
+            <input id="email" class="contacto__campo" type="email" placeholder="Correo Electrónico" required>
+            <textarea id="message" class="contacto__campo contacto__campo--textarea" placeholder="Mensaje" required></textarea>
             <button class="contacto__boton" type="submit">Enviar</button>
         </form>
+        <div id="confirmationMessage" style="display: none; margin-top: 20px; color: green;">¡Gracias! Tu mensaje ha sido enviado.</div>
     </section>
-    <footer class="footer">Made with love by Jhovani Baltazar</footer>
+    <footer class="footer">Made with alot of ❤️ by Jhovani Baltazar</footer>
 </body>
 
     <script src="script.js"></script>
